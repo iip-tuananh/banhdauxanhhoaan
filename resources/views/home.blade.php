@@ -48,7 +48,7 @@
                <div class="col-lg-12 bg_white">
                      <div class="section_title_base">
                      <h2 class="title_modules">
-                        <a href="#" title="Sản nổi bật">Sản nổi bật</a>
+                        <a href="#" title="Sản nổi bật">Sản phẩm nổi bật</a>
                      </h2>
                      </div>
                      <div class="section owl_nav_custome2 section_content">
