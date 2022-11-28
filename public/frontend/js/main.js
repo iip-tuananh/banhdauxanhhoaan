@@ -752,7 +752,7 @@ $('.slicktwo_frist').slick({
 	dots: false,
 	arrows: true,
 	rows: 2,
-	loop: false,
+	loop: true,
 	infinite:false,
 	speed: 300,
 	slidesToShow: 4,
