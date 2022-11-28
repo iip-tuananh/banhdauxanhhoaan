@@ -40,7 +40,7 @@
          </div>
    </section>
 </section>
-<section class="awe-section-2">
+{{-- <section class="awe-section-2">
    <section class="section_pro_policy">
          <div class="section_product_news">
          <div class="container">
@@ -83,7 +83,7 @@
          </div>
          </div>
    </section>
-</section>
+</section> --}}
 {{-- <section class="awe-section-3">
    <div class="section_product_sale lazyload" data-src="//bizweb.dktcdn.net/100/091/139/themes/880352/assets/bg_sec_pro_sale.jpg?1665384631842">
          <div class="container">
@@ -284,53 +284,13 @@
          </div>
    </section>
 </section>
-@if (isset($bannerAds))
+{{-- @if (isset($bannerAds))
 <section class="awe-section-5">
    <section class="section_feedback lazyload" data-src="{{$bannerAds->image}}">
-         {{-- <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="section_title_base">
-                     <h2 class="title_modules">
-                     <span>Ý kiến khách hàng</span>
-                     </h2>
-               </div>
-               <div class="owltesti">
-                     <div class="items">
-                     <div class="item dgwrap current" data-text="Là đơn vị bán hàng online, tôi rất hài lòng với giao diện của Bizweb, Love Kitchen thu hút được rất nhiều khách hàng. Cảm ơn đội ngũ chăm sóc khách hàng tận tình và luôn tư vấn, giới thiệu cho Love Kitchen những tính năng mới..">
-                        <div class="right">
-                           <p>
-                                 Là đơn vị bán hàng online, tôi rất hài lòng với giao diện của Bizweb, Love Kitchen thu hút được rất nhiều khách hàng. Cảm ơn đội ngũ chăm sóc khách hàng tận tình và luôn tư vấn, giới thiệu cho Love Kitchen những tính năng mới..
-                           </p>
-                        </div>
-                     </div>
-                     </div>
-                     <div class="items">
-                     <div class="item dgwrap " data-text="Là đơn vị bán hàng online, tôi rất hài lòng với giao diện của Bizweb, Love Kitchen thu hút được rất nhiều khách hàng. Cảm ơn đội ngũ chăm sóc khách hàng tận tình và luôn tư vấn, giới thiệu cho Love Kitchen những tính năng mới..">
-                        <div class="right">
-                           <p>
-                                 Là đơn vị bán hàng online, tôi rất hài lòng với giao diện của Bizweb, Love Kitchen thu hút được rất nhiều khách hàng. Cảm ơn đội ngũ chăm sóc khách hàng tận tình và luôn tư vấn, giới thiệu cho Love Kitchen những tính năng mới..
-                           </p>
-                        </div>
-                     </div>
-                     </div>
-                     <div class="items">
-                     <div class="item dgwrap " data-text="Là đơn vị bán hàng online, tôi rất hài lòng với giao diện của Bizweb, Love Kitchen thu hút được rất nhiều khách hàng. Cảm ơn đội ngũ chăm sóc khách hàng tận tình và luôn tư vấn, giới thiệu cho Love Kitchen những tính năng mới..">
-                        <div class="right">
-                           <p>
-                                 Là đơn vị bán hàng online, tôi rất hài lòng với giao diện của Bizweb, Love Kitchen thu hút được rất nhiều khách hàng. Cảm ơn đội ngũ chăm sóc khách hàng tận tình và luôn tư vấn, giới thiệu cho Love Kitchen những tính năng mới..
-                           </p>
-                        </div>
-                     </div>
-                     </div>
-               </div>
-            </div>
-         </div>
-         </div> --}}
    </section>
 </section>
-@endif
-<section class="awe-section-6">
+@endif --}}
+{{-- <section class="awe-section-6">
    <section class="section_blog">
          <div class="container">
          <h2 class="title_modules_2">
@@ -362,5 +322,5 @@
          </div>
          </div>
    </section>
-</section>
+</section> --}}
 @endsection
