@@ -76,7 +76,7 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 details-pro">
                      <h1 class="title-product">{{languageName($product->name)}}</h1>
                      <div class="fw w_100">
-                        <div class="price-box">
+                        {{-- <div class="price-box">
                            @if ($product->price > 0 && $product->discount > 0)
                            <span class="special-price">
                               <span class="price product-price">{{number_format($priceDiscount,0,'','.')}}₫</span>
@@ -95,53 +95,10 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
                               <span class="price product-price">Liên hệ</span>
                            </span>
                            @endif
-                        </div>
+                        </div> --}}
                         <div class="product-summary">
                            <div class="rte">
                               {!!languageName($product->description)!!}
-                           </div>
-                        </div>
-                     </div>
-                     <div class="form-product col-sm-12 col-lg-12 col-md-12 col-xs-12">
-                        {{-- <div class="box-variant clearfix ">
-                           <input type="hidden" name="variantId" value="4148204" />
-                        </div>
-                        <div class="form-group form_button_details margin-top-10">
-                           <div class="form_product_content type1 ">
-                              <div class="soluong soluong_type_1 show">
-                                 <label>Số lượng</label>
-                                 <div class="custom input_number_product custom-btn-number form-control">									
-                                    <button class="btn_num num_1 button button_qty" onClick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) &amp;&amp; qtypro &gt; 1 ) result.value--;return false;" type="button"><i class="fa fa-minus"></i></button>
-                                    <input type="text" id="qtym" name="quantity" value="1" maxlength="3" class="form-control prd_quantity " onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
-                                    <button class="btn_num num_2 button button_qty" onClick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button"><i class="fa fa-plus"></i></button>
-                                 </div>
-                              </div>
-                              <div class="button_actions clearfix">
-                                 <button type="submit" class="btn btn_base btn_add_cart btn-cart add_to_cart">
-                                 <span class="text_1">Mua ngay</span>
-                                 </button>									
-                              </div>
-                           </div>
-                        </div>
-                        <div class="tagslist">
-                           <label class="inline">TAGS: </label>
-                           <a href="/search?query=tags:(Bát-sứ)" title="Bát sứ">Bát sứ</a>						
-                        </div> --}}
-                        <div class="social_pro">
-                           <div class="social-media" data-permalink="{{url()->current()}}">
-                              <label>Share: </label>
-                              <a target="_blank" href="//www.facebook.com/sharer.php?u={{url()->current()}}" class="share-facebook" title="Chia sẻ lên Facebook">
-                              <i class="fab fa-facebook-f"></i>
-                              </a>
-                              <a target="_blank" href="//twitter.com/share?text={{languageName($product->name)}}c&amp;url={{url()->current()}}" class="share-twitter" title="Chia sẻ lên Twitter">
-                              <i class="fab fa-twitter"></i>
-                              </a>
-                              <a target="_blank" href="//pinterest.com/pin/create/button/?url={{url()->current()}}&amp;media=&amp;description={{languageName($product->name)}}c" class="share-pinterest" title="Chia sẻ lên pinterest">
-                              <i class="fab fa-pinterest"></i>
-                              </a>
-                              <a target="_blank" href="//plus.google.com/share?url={{url()->current()}}" class="share-google" title="+1">
-                              <i class="fab fa-google"></i>
-                              </a>
                            </div>
                         </div>
                      </div>

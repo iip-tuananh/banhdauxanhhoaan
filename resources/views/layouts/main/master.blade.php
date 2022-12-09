@@ -223,6 +223,22 @@
       function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("footer")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
       //]]> 
    </script>
+   <script type="text/javascript">
+      function nocontext(e) {
+      var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+      if (clickedTag == "IMG")
+         return false;
+      }
+      document.oncontextmenu = nocontext;
+   </script>
+
+   <style>
+   img {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+   }
+   </style>
    <!-- Add to cart -->
    <div id="popupCartModal" class="modal fade" role="dialog">
    </div>

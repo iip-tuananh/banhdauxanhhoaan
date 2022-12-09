@@ -45,7 +45,7 @@ Liên hệ với chúng tôi
 <div class="page_contact">
 <div class="container">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-xs-last">
+		{{-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-xs-last">
 			<div class="page-login page_cotact">
 			<h1 class="title-head-contact a-left"><span>Liên hệ</span></h1>
 			<div id="pagelogin">
@@ -77,8 +77,9 @@ Liên hệ với chúng tôi
 				</form>
 			</div>
 			</div>
-		</div>
-		<div class="select_mapss padding-top-40 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		</div> --}}
+
+		<div class="select_mapss padding-top-40 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
 			<div class="aa mid_fot_h contact_r page_cotact">
 			<a href="{{route('home')}}" class="logo-wrapper ">	
 			<img src="{{$setting->logo}}" alt="Bánh đậu xanh Hòa An">
@@ -88,14 +89,23 @@ Liên hệ với chúng tôi
 				<ul class="contact padding-0">
 					<li class="li_footer_h">
 						<span class="txt_content_childs">
-						<i class="fas fa-phone"></i>
+						{{-- <i class="fas fa-phone"></i> --}}
+						Hotline: 
 						<a href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a>
 						</span>
 					</li>
 					<li class="li_footer_h">
 						<span class="txt_content_childs">
-						<i class="far fa-envelope"></i>
+						{{-- <i class="far fa-envelope"></i> --}}
+						Email: 
 						<a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
+						</span>
+					</li>
+					<li class="li_footer_h">
+						<span class="txt_content_childs">
+						{{-- <i class="far fa-envelope"></i> --}}
+						Địa chỉ: 
+						<a href="https://www.google.com/maps/place/{{$setting->address1}}">{{$setting->address1}}</a>
 						</span>
 					</li>
 				</ul>

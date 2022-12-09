@@ -4,7 +4,7 @@
          <div class="mid-footer section">
             <div class="container">
                <div class="row">
-                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
                      <div class="widget-ft first">
                         <h4 class="title-menu">
                            <span class="collapsed">
@@ -22,10 +22,6 @@
                                  <div class="r">
                                  <i class="fas fa-phone"></i>
                                  <span class="span_fone">Hotline:</span><a class="fone" href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a>
-                                 </div>
-                                 <div class="r">
-                                 <i class="far fa-clock"></i>
-                                 <span>Trực 8h00-17h30 từ thứ 2 đến thứ 6</span>
                                  </div>
                            </div>
                         </div>
@@ -49,7 +45,7 @@
                         </div>
                      </div>
                      </div>
-                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                     {{-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
                      <div class="widget-ft">
                         <h4 class="title-menu">
                            <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu02" aria-controls="collapseListMenu03">
@@ -64,8 +60,8 @@
                            </ul>
                         </div>
                      </div>
-                     </div>
-                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                     </div> --}}
+                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                      <div class="widget-ft">
                         <h4 class="title-menu">
                            <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu03" aria-controls="collapseListMenu03">
