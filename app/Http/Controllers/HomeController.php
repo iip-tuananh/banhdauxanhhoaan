@@ -23,7 +23,7 @@ class HomeController extends Controller
         $data['reviewCus'] = ReviewCus::where(['status'=>1])->get();
         $data['aboutUs'] = PageContent::where(['status'=>1, 'type'=>'ve-chung-toi', 'language'=>'vi'])->first();
         $data['homeProduct'] = Product::where(['status'=>1, 'discountStatus'=>1])->orderBy('id', 'desc')->limit(6)->get(['id','category','name','discount','price','images','slug','cate_slug','type_slug']);
-        $data['allProduct'] = Product::where(['status'=>1])->get(['id','category','name','discount','price','images','slug','cate_slug','type_slug']);
+        $data['allProduct'] = Product::where(['status'=>1])->orderBy('id', 'desc')->get(['id','category','name','discount','price','images','slug','cate_slug','type_slug']);
         $data['homeBlog'] = Blog::where(['status'=>1, 'home_status'=>1])->orderBy('id', 'desc')->limit(6)->get(['id','title','image','description','created_at','slug','category']);
         return view('home',$data);
     }
