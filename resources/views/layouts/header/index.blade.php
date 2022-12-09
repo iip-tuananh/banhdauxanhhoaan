@@ -42,7 +42,11 @@
                                                 <ul class="item_small">
                                                    @foreach ($categoryhome as $cate)
                                                    <li>
-                                                         <a href="{{route('allListProCate',['cate'=>$cate->slug])}}" title="{{languageName($cate->name)}}">{{languageName($cate->name)}}<i class="fa fa-angle-right"></i></a>
+                                                         <a href="{{route('allListProCate',['cate'=>$cate->slug])}}" title="{{languageName($cate->name)}}">{{languageName($cate->name)}}
+                                                            @if (count($cate->typeCate) > 0)
+                                                            <i class="fa fa-angle-right"></i>
+                                                            @endif
+                                                         </a>
                                                          <ul>
                                                             @foreach ($cate->typeCate as $type)
                                                             <li>
@@ -57,11 +61,16 @@
                                              </li>
                                              <li class="nav-item {{ Route::currentRouteName() == 'allListBlog' ||  Route::currentRouteName() == 'listCateBlog' ? 'active' : '' }}">
                                                 <a class="a-img" href="{{route('allListBlog')}}" title="Tin tức">
-                                                <span>Tin tức</span><i class="fa fa-angle-down"></i>							</a>
+                                                   <span>Tin tức</span>
+                                                   @if (count($blogCate) > 0)
+                                                   <i class="fa fa-angle-down"></i>		
+                                                   @endif
+                                                </a>
                                                 <ul class="item_small">
                                                    @foreach ($blogCate as $cate)
                                                    <li>
-                                                         <a href="{{route('listCateBlog', ['slug'=>$cate->slug])}}" title="{{languageName($cate->name)}}">{{languageName($cate->name)}}<i class="fa fa-angle-right"></i></a>
+                                                         <a href="{{route('listCateBlog', ['slug'=>$cate->slug])}}" title="{{languageName($cate->name)}}">{{languageName($cate->name)}}
+                                                         </a>
                                                    </li>
                                                    @endforeach
                                                 </ul>
