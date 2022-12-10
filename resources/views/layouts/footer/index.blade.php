@@ -1,5 +1,5 @@
 <div class="section footer_wwap">
-   <footer class="footer lazyload" data-src="{{url('frontend/images/bg-footer.png')}}">
+   <footer class="footer lazyload" data-src="">
          <div class="site-footer">
          <div class="mid-footer section">
             <div class="container">
