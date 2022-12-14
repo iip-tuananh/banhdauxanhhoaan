@@ -123,7 +123,7 @@ Danh sách {{$title}}
                                        </div>
                                        <div class="product-info a-left">
                                           <h3 class="product-name"><a href="{{route('detailProduct', ['cate'=>$product->cate_slug, 'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">{{languageName($product->name)}}</a></h3>
-                                          <div class="product-hideoff">
+                                          {{-- <div class="product-hideoff">
                                              <div class="product-hide">
                                                 <div class="price-box clearfix">
                                                    @if ($product->price > 0 && $product->discount > 0)
@@ -146,7 +146,7 @@ Danh sách {{$title}}
                                                    @endif
                                                 </div>
                                              </div>
-                                          </div>
+                                          </div> --}}
                                        </div>
                                     </div>
                                  </div>
