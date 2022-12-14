@@ -38,6 +38,9 @@ Liên hệ với chúng tôi
 			<div class="maps_iframe">
 			{!!$setting->iframe_map!!}
 			</div>
+			<div class="bg-contact">
+				<img src="{{url('frontend/images/bg-contact.jpg')}}" alt="contact" style="width: 100%">
+			</div>
 		</div>
 	</div>
 </div>
