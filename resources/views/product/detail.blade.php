@@ -97,7 +97,7 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
                            @endif
                         </div> --}}
                         <div class="product-summary">
-                           <div class="rte">
+                           <div class="rte hidden">
                               {!!languageName($product->description)!!}
                            </div>
                         </div>
