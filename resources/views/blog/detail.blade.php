@@ -113,12 +113,12 @@
 							</div>
 							<span>
 								<picture>
-									<source media="(max-width: 480px)" srcset="{{$blog_detail->image}}">
-									<source media="(min-width: 481px) and (max-width: 767px)" srcset="{{$blog_detail->image}}">
-									<source media="(min-width: 768px) and (max-width: 1023px)" srcset="{{$blog_detail->image}}">
-									<source media="(min-width: 1024px) and (max-width: 1199px)" srcset="{{$blog_detail->image}}">
-									<source media="(min-width: 1200px)" srcset="{{$blog_detail->image}}">
-									<img class="img-fluid" src="{{$blog_detail->image}}" title="{{languageName($blog_detail->title)}}" alt="{{languageName($blog_detail->title)}}">
+									<source media="(max-width: 480px)" srcset="{{url($blog_detail->image)}}">
+									<source media="(min-width: 481px) and (max-width: 767px)" srcset="{{url($blog_detail->image)}}">
+									<source media="(min-width: 768px) and (max-width: 1023px)" srcset="{{url($blog_detail->image)}}">
+									<source media="(min-width: 1024px) and (max-width: 1199px)" srcset="{{url($blog_detail->image)}}">
+									<source media="(min-width: 1200px)" srcset="{{url($blog_detail->image)}}">
+									<img class="img-fluid" src="{{url($blog_detail->image)}}" title="{{languageName($blog_detail->title)}}" alt="{{languageName($blog_detail->title)}}">
 								</picture>
 							</span>
 						</div>
@@ -148,7 +148,7 @@
 								<a target="_blank" href="//twitter.com/share?text={{languageName($blog_detail->title)}}&amp;url={{url()->current()}}" class="share-twitter" title="Chia sẻ lên Twitter">
 								<i class="fab fa-twitter"></i>
 								</a>
-								<a target="_blank" href="//pinterest.com/pin/create/button/?url={{url()->current()}}&amp;media={{$blog_detail->image}}&amp;description={{languageName($blog_detail->title)}}" class="share-pinterest" title="Chia sẻ lên pinterest">
+								<a target="_blank" href="//pinterest.com/pin/create/button/?url={{url()->current()}}&amp;media={{url($blog_detail->image)}}&amp;description={{languageName($blog_detail->title)}}" class="share-pinterest" title="Chia sẻ lên pinterest">
 								<i class="fab fa-pinterest"></i>
 								</a>
 								<a target="_blank" href="//plus.google.com/share?url={{url()->current()}}" class="share-google" title="+1">

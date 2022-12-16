@@ -22,17 +22,17 @@
                   <picture>
                         <source 
                         media="(min-width: 1200px)"
-                        srcset="{{$banner->image}}">
+                        srcset="{{url($banner->image)}}">
                         <source 
                         media="(min-width: 992px)"
-                        srcset="{{$banner->image}}">
+                        srcset="{{url($banner->image)}}">
                         <source 
                         media="(min-width: 569px)"
-                        srcset="{{$banner->image}}">
+                        srcset="{{url($banner->image)}}">
                         <source 
                         media="(min-width: 480px)"
-                        srcset="{{$banner->image}}">
-                        <img width="1920" height="747" src="{{$banner->image}}" alt="Bánh đậu xanh"/>
+                        srcset="{{url($banner->image)}}">
+                        <img width="1920" height="747" src="{{url($banner->image)}}" alt="Bánh đậu xanh"/>
                   </picture>
                </a>
             </div>
