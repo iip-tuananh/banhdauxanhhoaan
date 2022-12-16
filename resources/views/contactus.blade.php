@@ -45,40 +45,4 @@ Liên hệ với chúng tôi
 	</div>
 </div>
 </div>
-{{-- <div class="page_contact">
-<div class="container">
-	<div class="row">
-		<div class="select_mapss padding-top-40 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-			<div class="aa mid_fot_h contact_r page_cotact">
-			<a href="{{route('home')}}" class="logo-wrapper ">	
-			<img src="{{$setting->logo}}" alt="Bánh đậu xanh Hòa An">
-			</a>
-			<span class="text_sum_contact">{{$setting->webname}}</span>
-			<div class="hotline_footer">
-				<ul class="contact padding-0">
-					<li class="li_footer_h">
-						<span class="txt_content_childs">
-						Hotline: 
-						<a href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a>
-						</span>
-					</li>
-					<li class="li_footer_h">
-						<span class="txt_content_childs">
-						Email: 
-						<a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
-						</span>
-					</li>
-					<li class="li_footer_h">
-						<span class="txt_content_childs">
-						Địa chỉ: 
-						<a href="https://www.google.com/maps/place/{{$setting->address1}}">{{$setting->address1}}</a>
-						</span>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div> --}}
 @endsection

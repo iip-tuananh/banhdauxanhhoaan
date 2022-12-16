@@ -123,30 +123,6 @@ Danh sách {{$title}}
                                        </div>
                                        <div class="product-info a-left">
                                           <h3 class="product-name"><a href="{{route('detailProduct', ['cate'=>$product->cate_slug, 'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">{{languageName($product->name)}}</a></h3>
-                                          {{-- <div class="product-hideoff">
-                                             <div class="product-hide">
-                                                <div class="price-box clearfix">
-                                                   @if ($product->price > 0 && $product->discount > 0)
-                                                   <div class="special-price">
-                                                      <span class="price product-price">{{number_format($discountPrice,0,'','.')}}₫</span>
-                                                   </div>
-                                                   <div class="old-price">
-                                                      <span class="price product-price-old">
-                                                         {{number_format($product->price,0,'','.')}}₫			
-                                                      </span>
-                                                   </div>
-                                                   @elseif($product->price > 0 && $product->discount == 0)
-                                                   <div class="special-price">
-                                                      <span class="price product-price">{{number_format($product->price,0,'','.')}}₫</span>
-                                                   </div>
-                                                   @else
-                                                   <div class="special-price">
-                                                      <span class="price product-price">Liên hệ</span>
-                                                   </div>
-                                                   @endif
-                                                </div>
-                                             </div>
-                                          </div> --}}
                                        </div>
                                     </div>
                                  </div>
@@ -163,49 +139,6 @@ Danh sách {{$title}}
                   <h1 class="cat-heading">{{$title}}</h1>
                </div>
                <div class="category-products products">
-                  {{-- <div class="section">
-                     <div class="sortPagiBar">
-                        <div class="row">
-                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                              <div class="f-left inline-block">
-                                 <div class="view-mode hidden-xs">
-                                    <a href="javascript:;" data-view="grid" onclick="switchView('grid')" title="Grid view" class="a_grid">
-                                    <b class="btn button-view-mode view-mode-grid active">
-                                    <i class="fas fa-th" aria-hidden="true"></i>					
-                                    </b>
-                                    <span>Lưới</span>
-                                    </a>
-                                    <a href="javascript:;" data-view="list" onclick="switchView('list')" title="List view" class="a_list">
-                                    <b class="btn button-view-mode view-mode-list ">
-                                    <i class="fas fa-th-list" aria-hidden="true"></i>
-                                    </b>
-                                    <span>Danh sách</span>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="sort-cate clearfix">
-                                 <div id="sort-by">
-                                    <label class="left hidden-xs">Sắp xếp theo </label>
-                                    <ul class="ul_col">
-                                       <li>
-                                          <span>Thứ tự</span>
-                                          <ul class="content_ul">
-                                             <li><a href="javascript:;" onclick="sortby('default')">Mặc định</a></li>
-                                             <li><a href="javascript:;" onclick="sortby('alpha-asc')">A &rarr; Z</a></li>
-                                             <li><a href="javascript:;" onclick="sortby('alpha-desc')">Z &rarr; A</a></li>
-                                             <li><a href="javascript:;" onclick="sortby('price-asc')">Giá tăng dần</a></li>
-                                             <li><a href="javascript:;" onclick="sortby('price-desc')">Giá giảm dần</a></li>
-                                             <li><a href="javascript:;" onclick="sortby('created-desc')">Hàng mới nhất</a></li>
-                                             <li><a href="javascript:;" onclick="sortby('created-asc')">Hàng cũ nhất</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div> --}}
                   <section class="products-view products-view-grid collection_reponsive list_hover_pro">
                      <div class="row">
                         @foreach ($list as $product)

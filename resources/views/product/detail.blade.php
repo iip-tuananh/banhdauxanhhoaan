@@ -76,26 +76,6 @@ $priceDiscount = $product->price - $product->price * ($product->discount / 100);
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 details-pro">
                      <h1 class="title-product">{{languageName($product->name)}}</h1>
                      <div class="fw w_100">
-                        {{-- <div class="price-box">
-                           @if ($product->price > 0 && $product->discount > 0)
-                           <span class="special-price">
-                              <span class="price product-price">{{number_format($priceDiscount,0,'','.')}}₫</span>
-                           </span>
-                           <!-- Giá Khuyến mại -->
-                           <span class="old-price">
-                              <del class="price product-price-old sale">{{number_format($product->price,0,'','.')}}₫</del>
-                           </span>
-                           <!-- Giá gốc -->
-                           @elseif($product->price > 0 && $product->discount == 0)
-                           <span class="special-price">
-                              <span class="price product-price">{{number_format($product->price,0,'','.')}}₫</span>
-                           </span>
-                           @else
-                           <span class="special-price">
-                              <span class="price product-price">Liên hệ</span>
-                           </span>
-                           @endif
-                        </div> --}}
                         <div class="product-summary">
                            <div class="rte hidden">
                               {!!languageName($product->description)!!}

@@ -45,22 +45,6 @@
                         </div>
                      </div>
                      </div>
-                     {{-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                     <div class="widget-ft">
-                        <h4 class="title-menu">
-                           <a role="button" class="collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapseListMenu02" aria-controls="collapseListMenu03">
-                           Chính sách hỗ trợ<i class="fa fa-plus" aria-hidden="true"></i>
-                           </a>
-                        </h4>
-                        <div class="collapse" id="collapseListMenu02">
-                           <ul class="list-menu">
-                              @foreach ($helpCus as $item)
-                              <li class="li_menu"><a href="{{route('helpCus', ['slug'=>$item->slug])}}">{{$item->title}}</a></li>
-                              @endforeach
-                           </ul>
-                        </div>
-                     </div>
-                     </div> --}}
                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                      <div class="widget-ft">
                         <h4 class="title-menu">

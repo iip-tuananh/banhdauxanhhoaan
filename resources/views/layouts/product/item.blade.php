@@ -12,30 +12,6 @@ $discountPrice = $product->price - $product->price * ($product->discount / 100);
          </div>
          <div class="product-info a-left">
          <h3 class="product-name"><a href="{{route('detailProduct',['cate'=>$product->cate_slug, 'slug'=>$product->slug])}}" title="{{languageName($product->name)}}">{{languageName($product->name)}}</a></h3>
-         {{-- <div class="product-hideoff">
-            <div class="product-hide">
-               <div class="price-box clearfix">
-                  @if ($product->price > 0 && $product->discount > 0)
-                     <div class="special-price">
-                     <span class="price product-price">{{number_format($discountPrice,0,'','.')}}₫</span>
-                     </div>
-                     <div class="old-price">															 
-                     <span class="price product-price-old">
-                     {{number_format($product->price,0,'','.')}}₫			
-                     </span>
-                     </div>
-                  @elseif($product->price > 0 && $product->discount == 0)
-                     <div class="special-price">
-                     <span class="price product-price">{{number_format($product->price,0,'','.')}}₫</span>
-                     </div>
-                  @else
-                     <div class="special-price">
-                     <span class="price product-price">Liên hệ</span>
-                     </div>
-                  @endif
-               </div>
-            </div>
-         </div> --}}
          </div>
    </div>
 </div>
