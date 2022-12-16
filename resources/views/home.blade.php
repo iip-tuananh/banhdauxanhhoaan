@@ -32,7 +32,7 @@
                         <source 
                         media="(min-width: 480px)"
                         srcset="{{url($banner->image)}}">
-                        <img width="1920" height="747" src="{{url($banner->image)}}" alt="Bánh đậu xanh"/>
+                        <img width="1920" height="747" src="{{url(''.$banner->image)}}" alt="Bánh đậu xanh"/>
                   </picture>
                </a>
             </div>
