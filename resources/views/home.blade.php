@@ -44,6 +44,9 @@
    <section class="section_tab_allproduct">
          <div class="container">
          <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3">
+                  <img style="max-width: 700px;" src="{{url('frontend/images/image.jpg')}}" alt="bg_collection">
+               </div>
             <div class="col-lg-12">
                <div class="section_title_base">
                      <h2 class="title_modules">
