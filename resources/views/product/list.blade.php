@@ -36,8 +36,8 @@ Danh sách {{$title}}
    <div class="container ">
       <div class="bg_collection section">
          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-               <img src="{{url('frontend/images/image.jpg')}}" alt="bg_collection">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center mb-3">
+               <img style="max-width: 700px;" src="{{url('frontend/images/image.jpg')}}" alt="bg_collection">
             </div>
             <aside class="dqdt-sidebar sidebar left-content col-lg-3 col-md-12 col-sm-12">
                <div class="wrap_background_aside asidecollection">
