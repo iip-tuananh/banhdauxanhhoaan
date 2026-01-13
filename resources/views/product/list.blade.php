@@ -16,7 +16,7 @@ Danh sách {{$title}}
 @endsection
 @section('content')
 <div id="menu-overlay" class=""></div>
-<section class="awe-section-1 mb-4">
+<section class="awe-section-1">
    <section class="sectionslider">
          <div class="section home-slider">
             @foreach ($banners as $banner)
