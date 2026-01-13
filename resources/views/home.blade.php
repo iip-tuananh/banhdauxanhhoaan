@@ -13,7 +13,7 @@
 @section('js')
 @endsection
 @section('content')
-<section class="awe-section-1">
+<section class="awe-section-1 mb-4">
    <section class="sectionslider">
          <div class="section home-slider">
             @foreach ($banners as $banner)
