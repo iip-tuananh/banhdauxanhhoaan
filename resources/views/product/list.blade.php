@@ -16,6 +16,33 @@ Danh sách {{$title}}
 @endsection
 @section('content')
 <div id="menu-overlay" class=""></div>
+<section class="awe-section-1 mb-4">
+   <section class="sectionslider">
+         <div class="section home-slider">
+            @foreach ($banners as $banner)
+            <div class="items">
+               <a href="{{$banner->link}}">
+                  <picture>
+                        <source 
+                        media="(min-width: 1200px)"
+                        srcset="{{url($banner->image)}}">
+                        <source 
+                        media="(min-width: 992px)"
+                        srcset="{{url($banner->image)}}">
+                        <source 
+                        media="(min-width: 569px)"
+                        srcset="{{url($banner->image)}}">
+                        <source 
+                        media="(min-width: 480px)"
+                        srcset="{{url($banner->image)}}">
+                        <img width="1920" height="747" src="{{url(''.$banner->image)}}" alt="Bánh đậu xanh"/>
+                  </picture>
+               </a>
+            </div>
+            @endforeach
+         </div>
+   </section>
+</section>
 <div class="section wrap_background">
    <section class="bread-crumb">
       <span class="crumb-border"></span>

@@ -10,12 +10,14 @@ use App\models\blog\Blog;
 use App\models\product\TypeProduct;
 use App\models\construction\Construction;
 use  App\models\product\TypeProductTwo;
+use App\models\BannerAds;
 use Session;
 
 class ProductController extends Controller
 {
     public function allProduct()
     {
+        $data['bannerAds'] = BannerAds::where('status',1)->first(['name','image','id']);
         $data['list'] = Product::where(['status'=>1])->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug')
         ->paginate(12);
         $data['title'] = "Tất cả sản phẩm";
@@ -24,6 +26,7 @@ class ProductController extends Controller
 
     public function allListCate($cate)
     {
+        $data['bannerAds'] = BannerAds::where('status',1)->first(['name','image','id']);
         $data['list'] = Product::where(['status'=>1,'cate_slug'=>$cate])
         ->orderBy('id','DESC')
         ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
@@ -36,6 +39,7 @@ class ProductController extends Controller
         return view('product.list',$data);
     }
     public function allListType($cate,$typeCate){
+        $data['bannerAds'] = BannerAds::where('status',1)->first(['name','image','id']);
         $data['list'] = Product::where(['status'=>1,'cate_slug'=>$cate,'type_slug'=>$typeCate])
         ->orderBy('id','DESC')
         ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
@@ -50,6 +54,7 @@ class ProductController extends Controller
         return view('product.list',$data);
     }
     public function allListTypeTwo($danhmuc,$loaidanhmuc,$thuonghieu){
+        $data['bannerAds'] = BannerAds::where('status',1)->first(['name','image','id']);
         $data['list'] = Product::where(['status'=>1,'cate_slug'=>$danhmuc,'type_slug'=>$loaidanhmuc,'type_two_slug'=>$thuonghieu])
             ->orderBy('id','DESC')
             ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
