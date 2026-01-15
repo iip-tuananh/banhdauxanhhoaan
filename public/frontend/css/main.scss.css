@@ -41,3 +41,11 @@
 .zoom {
 	transition: transform 1s;
 }
+.imagehome{
+	max-width: 700px;
+}
+@media (max-width: 768px) {
+	.imagehome{
+		max-width: 100%;
+	}
+}
