@@ -9,3 +9,11 @@ a:attr{class:'abc'}@media (max-width: 991px){.sectionslider{margin-bottom:20px}}
         margin-bottom: 40px;
     }
 }
+.imagehome{
+	max-width: 700px;
+}
+@media (max-width: 768px) {
+	.imagehome{
+		max-width: 100%;
+	}
+}
